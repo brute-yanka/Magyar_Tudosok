@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Magyar Tudósok - Quiz</title>
+    <link rel="stylesheet" href="quiz_style.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+</head>
+<body>
+    <div class="start_btn">
+        <button>Quiz indítása</button>
+    </div>
+    <div class="info_box">
+        <div class="info_title">
+            <span>Néhány szabály</span>
+        </div>
+        <div class="info_list">
+            <div class="info">1. Kérdésenként <span>15 másodperc</span> áll majd rendelkezésre.</div>
+            <div class="info">2. Ha megjelölted a válaszod, azon már később nem lehet változtatni.</div>
+            <div class="info">3. Ha letelik a rendelkezésre álló idő, akkor már nem tudsz választ megjelölni.</div>
+            <div class="info">4. Nem léphetsz ki a Quiz-ből játék közben.</div>
+            <div class="info">5. Ha helyesen adod meg a válaszokat, pontokat kapsz.</div>
+        </div>
+        <div class="buttons">
+            <button class="quit">Kilépés</button>
+            <button class="play">Folytatás</button>
+        </div>
+    </div>
+    <div class="quiz_box">
+        <header>
+            <div class="title">Magyar Tudósok</div>
+            <div class="timer">
+                <div class="time_text">Háralévő idő</div>
+                <div class="timer_sec">15</div>
+            </div>
+            <div class="time_line"></div>
+        </header>
+        <section>
+            <div class="que_text"></div>
+            <div class="option_list"></div>
+        </section>
+        <footer>
+            <div class="total_que"></div>
+            <button class="next_btn">Következő kérdés</button>
+        </footer>
+    </div>
+    <div class="result_box">
+        <div class="icon"><img src="Images/trophy.png"></div>
+        <div class="complete_text">Sikeresen teljesítetted a Quiz-t!</div>
+        <div class="score_text"></div>
+        <div class="buttons">
+            <button class="restart">Újraindítás</button>
+            <button class="quit">Kilépés a Quiz-ből</button>
+        </div>
+    </div>
+    <script src="quiz_questions.js"></script>
+    <script src="quiz_main.js"></script>
+</body>
+</html>

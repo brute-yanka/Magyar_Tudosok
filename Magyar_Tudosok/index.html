@@ -1,0 +1,692 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="Images/logo.png" type="image/x-icon">
+    <title>Magyar Tudósok</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="CSS/swiper-bundle.min.css">
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="#" class="nav__logo">
+                    <img src="Images/logo.png" alt="" class="nav__logo-img">
+                Magyar Tudósok
+            </a>
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="#home" class="nav__link active-link">Főoldal</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#nobel" class="nav__link">Nobel-díj</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#magyar" class="nav__link">Nagy magyarok</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#quiz" class="nav__link">Hasznos Tudnivalók</a>
+                    </li>
+                </ul>
+                <div class="nav__close" id="nav-close">
+                    <i class="ri-close-line"></i>
+                </div>
+            </div>
+            <div class="nav__btns">
+                <i class="ri-moon-line change-theme" id="theme-button"></i>
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class="ri-menu-line"></i>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main class="main">
+        <section class="home" id="home">
+            <div class="home__container container grid">
+                <img src="Images/home.jpg" alt="" class="home__img">
+                <div class="home__data">
+                    <h1 class="home__title">
+                        Magyar Tudósok, Feltalálók
+                    </h1>
+                    <p class="home__description">
+                        A honlapon megtalálható az ismertebb magyar tudósok, feltalálók életútjai és felfedezéseik.
+                    </p>
+                    <a href="#nobel" class="button button--flex lang_button">
+                        Tovább olvasom<i class="ri-arrow-right-down-line button__icon"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <section class="nobel section container" id="nobel">
+            <div class="nobel__container grid">
+                <img src="Images/nobel.jpg" alt="" class="nobel__img">
+                <div class="nobel__data">
+                    <h2 class="section__title nobel__title">
+                        Röviden a Nobel-díjról
+                    </h2>
+                    <p class="nobel__description">
+                        A Nobel-díjat Alfred Nobel eredeti szándéka és végrendelete szerint egy-egy jól meghatározott felfedezésért adják, amely az emberiséget szolgálja.
+                    </p>
+                    <div class="nobel__details">
+                        <p class="nobel__details-description">
+                            <i class="ri-checkbox-fill nobel__details-icon"></i>
+                            Szervezet neve: Svéd Királyi Tudományos Akadémia
+                        </p>
+                        <p class="nobel__details-description">
+                            <i class="ri-checkbox-fill nobel__details-icon"></i>
+                            Alapítás éve: 1895
+                        </p>
+                        <p class="nobel__details-description">
+                            <i class="ri-checkbox-fill nobel__details-icon"></i>
+                            Első díjátadás: 1901
+                        </p>
+                        <p class="nobel__details-description">
+                            <i class="ri-checkbox-fill nobel__details-icon"></i>
+                            Legutóbbi díjátadás: 2022
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="card section container">
+            <h2 class="section__title-center">
+                Nobel díjasok
+            </h2>
+            <div class="card__container grid">
+                <article class="card__card">
+                    <img src="Images/Nobel/lenard_fulop.jpg" alt="" class="card__img">
+                    <h3 class="card__title">Lénárd Fülöp</h3>
+                    <p class="card__description">1905 - Fizika</p>
+                </article>
+                <article class="card__card">
+                    <img src="Images/Nobel/wigner_jeno.jpg" alt="" class="card__img">
+                    <h3 class="card__title">Wigner Jenő</h3>
+                    <p class="card__description">1963 - Fizika</p>
+                </article>
+                <article class="card__card">
+                    <img src="Images/Nobel/gabor_denes.jpg" alt="" class="card__img">
+                    <h3 class="card__title">Gábor Dénes</h3>
+                    <p class="card__description">1971 - Fizika</p>
+                </article>
+                <article class="card__card">
+                    <img src="Images/Nobel/szent_gyorgyi.jpg" alt="" class="card__img">
+                    <h3 class="card__title">Szent-Györgyi Albert</h3>
+                    <p class="card__description">1937 - Élettan és Orvostudomány</p>
+                </article>
+                <article class="card__card">
+                    <img src="Images/Nobel/bekesy_gyorgy.jpg" alt="" class="card__img">
+                    <h3 class="card__title">Békésy György</h3>
+                    <p class="card__description">1961 - Élettan és Orvostudomány</p>
+                </article>
+                <article class="card__card">
+                    <img src="Images/Nobel/hevesy_gyorgy.jpg" alt="" class="card__img">
+                    <h3 class="card__title">Hevesy György</h3>
+                    <p class="card__description">1943 - Kémia</p>
+                </article>
+                <article class="card__card">
+                    <img src="Images/Nobel/olah_gyorgy.jpg" alt="" class="card__img">
+                    <h3 class="card__title">Oláh György</h3>
+                    <p class="card__description">1994 - Kémia</p>
+                </article>
+                <article class="card__card">
+                    <img src="Images/Nobel/avram_hershko.jpg" alt="" class="card__img">
+                    <h3 class="card__title">Avram Hershko</h3>
+                    <p class="card__description">2004 - Kémia</p>
+                </article>
+                <article class="card__card">
+                    <img src="Images/Nobel/kertesz_imre.jpg" alt="" class="card__img">
+                    <h3 class="card__title">Kertész Imre</h3>
+                    <p class="card__description">2002 - Irodalom</p>
+                </article>
+            </div>
+        </section>
+        <section class="slider section container" id="magyar">
+            <div class="slider__bg">
+                <h2 class="section__title-center slider__title">
+                    Nagy magyar tudósok, feltalálók
+                </h2>
+                <div class="slider__container container">
+                    <div class="swiper slider-swiper">
+                        <div class="swiper-wrapper">
+                            <div class="slider__card swiper-slide" title="Húzza jobbra!">
+                                <div class="slider__card-number">01</div>
+                                <h3 class="slider__card-title">Szent-Györgyi Albert</h3>
+                                <p class="slider__card-description">
+                                    Az egyik leghíresebb és talán legtöbbet emlegetett magyar név a tudományban...
+                                </p>
+                                <div class="button--link slider__button button--flex">
+                                    Tovább olvasom<i class="ri-arrow-right-down-line button__icon"></i>
+                                </div>
+                            </div>
+                            <div class="slider__card swiper-slide" title="Húzza valamelyik irányba!">
+                                <div class="slider__card-number">02</div>
+                                <h3 class="slider__card-title">Semmelweis Ignác</h3>
+                                <p class="slider__card-description">
+                                    Talán nem túlzás azt állítani, hogy Semmelweis korában az orvostudomány nehezen...
+                                </p>
+                                <div class="button--link slider__button button--flex">
+                                    Tovább olvasom<i class="ri-arrow-right-down-line button__icon"></i>
+                                </div>
+                            </div>
+                            <div class="slider__card swiper-slide" title="Húzza valamelyik irányba!">
+                                <div class="slider__card-number">03</div>
+                                <h3 class="slider__card-title">Irinyi János</h3>
+                                <p class="slider__card-description">
+                                    A világ egyik legismertebb találmánya fűződik a nevéhez: a biztonsági gyufa...
+                                </p>
+                                <div class="button--link slider__button button--flex">
+                                    Tovább olvasom<i class="ri-arrow-right-down-line button__icon"></i>
+                                </div>
+                            </div>
+                            <div class="slider__card swiper-slide" title="Húzza valamelyik irányba!">
+                                <div class="slider__card-number">04</div>
+                                <h3 class="slider__card-title">Eötvös Loránd</h3>
+                                <p class="slider__card-description">
+                                    A kiváló fizikus neve talán az általa kifejlesztett Eötvös-inga vagyis a torziós ingáról lehet...
+                                </p>
+                                <div class="button--link slider__button button--flex">
+                                    Tovább olvasom<i class="ri-arrow-right-down-line button__icon"></i>
+                                </div>
+                            </div>
+                            <div class="slider__card swiper-slide" title="Húzza valamelyik irányba!">
+                                <div class="slider__card-number">05</div>
+                                <h3 class="slider__card-title">Jedlik Ányos</h3>
+                                <p class="slider__card-description">
+                                    Jedlik Ányos, amellett hogy bencés szerzetes volt, kiváló természettudós és...
+                                </p>
+                                <div class="button--link slider__button button--flex">
+                                    Tovább olvasom<i class="ri-arrow-right-down-line button__icon"></i>
+                                </div>
+                            </div>
+                            <div class="slider__card swiper-slide" title="Húzza valamelyik irányba!">
+                                <div class="slider__card-number">06</div>
+                                <h3 class="slider__card-title">Teller Ede</h3>
+                                <p class="slider__card-description">
+                                    Teller Edét úgy úgy is emlegetik, mint a hidrogénbomba atyját...
+                                </p>
+                                <div class="button--link slider__button button--flex">
+                                    Tovább olvasom<i class="ri-arrow-right-down-line button__icon"></i>
+                                </div>
+                            </div>
+                            <div class="slider__card swiper-slide" title="Húzza valamelyik irányba!">
+                                <div class="slider__card-number">07</div>
+                                <h3 class="slider__card-title">Telkes Mária</h3>
+                                <p class="slider__card-description">
+                                    Azért voltak híres tudós asszonyaink is, mint például Telkes Mária, aki a...
+                                </p>
+                                <div class="button--link slider__button button--flex">
+                                    Tovább olvasom<i class="ri-arrow-right-down-line button__icon"></i>
+                                </div>
+                            </div>
+                            <div class="slider__card swiper-slide" title="Húzza valamelyik irányba!">
+                                <div class="slider__card-number">08</div>
+                                <h3 class="slider__card-title">Tihanyi Kálmán</h3>
+                                <p class="slider__card-description">
+                                    Ha azt írom, hogy fotó ikonoszkóp, valószínűleg kevés embernek mond valamit...
+                                </p>
+                                <div class="button--link slider__button button--flex">
+                                    Tovább olvasom<i class="ri-arrow-right-down-line button__icon"></i>
+                                </div>
+                            </div>
+                            <div class="slider__card swiper-slide" title="Húzza valamelyik irányba!">
+                                <div class="slider__card-number">09</div>
+                                <h3 class="slider__card-title">Neumann János</h3>
+                                <p class="slider__card-description">
+                                    A számos felfedezése közül talán az első digitális számítógépek elvét lefektető...
+                                </p>
+                                <div class="button--link slider__button button--flex">
+                                    Tovább olvasom<i class="ri-arrow-right-down-line button__icon"></i>
+                                </div>
+                            </div>
+                            <div class="slider__card swiper-slide" title="Húzza valamelyik irányba!">
+                                <div class="slider__card-number">10</div>
+                                <h3 class="slider__card-title">Asboth Oszkár</h3>
+                                <p class="slider__card-description">
+                                    Bár már a zseniális Leonardo Da Vinci-t is foglalkoztatta egy forgószárnyas repülő...
+                                </p>
+                                <div class="button--link slider__button button--flex">
+                                    Tovább olvasom<i class="ri-arrow-right-down-line button__icon"></i>
+                                </div>
+                            </div>
+                            <div class="slider__card swiper-slide" title="Húzza balra!">
+                                <div class="slider__card-number">11</div>
+                                <h3 class="slider__card-title">Selye János</h3>
+                                <p class="slider__card-description">
+                                    Ha korunk egy egyik az egész világot érintő népbetegségét (nem járvány) emlegetjük...
+                                </p>
+                                <div class="button--link slider__button button--flex">
+                                    Tovább olvasom<i class="ri-arrow-right-down-line button__icon"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="quiz section" id="quiz">
+            <h2 class="section__title-center quiz__title container">
+                Hasznos tudnivalók a Quiz kérdésekhez
+            </h2>
+            <div class="quiz__container container grid">
+                <div class="quiz__group">
+                    <div class="quiz__item">
+                        <header class="quiz__header">
+                            <i class="ri-add-line quiz__icon"></i>
+                            <h3 class="quiz__item-title" title="Kattintson">
+                                I. A 19. század
+                            </h3>
+                        </header>
+                        <div class="quiz__content">
+                            <div class="quiz__description">
+                                <p>
+                                    Bolyai János (1802‒1860) a nem-euklideszi geometria egyik felfedezője, akinek nagyságát a szintén nemzetközileg ismert orosz Nyikolaj Lobacsevszkijéhez szokták hasonlítani.
+                                </p>
+                                <p>
+                                    Semmelweis Ignác (1818‒1865) nagyságát az angol Joseph Listeréhez mérik, de Semmelweis felfedezése a fertőtlenítés fontosságáról jóval megelőzte az angol tudósét. Lister 1867-ben a The Lancet orvosi
+                                    folyóiratban publikálta Semmelweiséhez hasonló ajánlásait hat dolgozatban. Addigra Semmelweis már halott volt, elmegyógyintézetben hunyt el tragikus körülmények között. Semmelweis nemzetközi
+                                    elismerésének egyik apró megnyilvánulása, hogy nevét bevésték New Yorkban a manhattani Egészségügyi Központ (Worth street 125.) homlokzatára más híres orvosok neveivel együtt. A Bécsi Egyetemen
+                                    elhelyezett emléktáblája a Bécsi Egyetem volt professzoraként emlékezik meg róla.
+                                </p>
+                                <p>
+                                    Nemzetközileg elismert fizikus Eötvös Loránd (1848‒1919), akinek gravitációs kutatásait gyakran emlegetik Albert Einstein relativitáselméletének előfutáraként. Eötvös Loránd apja, Eötvös József
+                                    (1813‒1871) vallás és közoktatásügyi miniszter, és élete utolsó öt évében egyben az MTA elnöke is, tudatosan terelte a hazai mérnökképzést a tudományosság irányába. Amikor minisztersége alatt
+                                    létrejött a Budapesti Műszaki Egyetem, hangsúlyozta, hogy a mérnökképzés professzorainak ugyanúgy feladata a kutatás, mint a más területeken működő professzoroknak.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="quiz__item">
+                        <header class="quiz__header">
+                            <i class="ri-add-line quiz__icon"></i>
+                            <h3 class="quiz__item-title" title="Kattintson">
+                                II. Mérnökök és feltalálók
+                            </h3>
+                        </header>
+                        <div class="quiz__content">
+                            <div class="quiz__description">
+                                <p>
+                                    Rubik Ernő bűvös kockája meghódította a világot. Különleges emlékműve a Graphisoft parkban áll. Rubik ma az egyik leghíresebb magyar, azért is, mert alkotását nem annyira bűvös kocka, mint inkább
+                                    Rubik-kocka néven ismerik világszerte.
+                                </p>
+                                <p>
+                                    Bay Zoltán a holdkutatásban itthon és az Egyesült Államokban.
+                                </p>
+                                <p>
+                                    Kandó Kálmán a vasútvillamosításban itthon és Olaszországban.
+                                </p>
+                                <p>
+                                    Puskás Tivadar a telefonközponttal Párizsban és Budapesten.
+                                </p>
+                                <p>
+                                    Bíró László József golyóstollát nemcsak itthon és Argentínában használják mind a mai napig, hanem az egész világon.
+                                </p>
+                                <p>
+                                    Domokos Gábor (1961‒) és Várkonyi Péter (1979‒) által közösen alkotott „Gömböc”, amely mindeddig az egyetlen olyan ismert homogén test, amely összesen két egyensúlyi ponttal rendelkezik (az egyik
+                                    stabilis, a másik instabil).
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="quiz__item">
+                        <header class="quiz__header">
+                            <i class="ri-add-line quiz__icon"></i>
+                            <h3 class="quiz__item-title" title="Kattintson">
+                                III. Fizikusok
+                            </h3>
+                        </header>
+                        <div class="quiz__content">
+                            <div class="quiz__description">
+                                <p>
+                                    Tisza László (1907‒2009) magyar–amerikai fizikus, a cseppfolyós hélium különleges tulajdonságainak úttörő kutatója Budapesten tanult, majd Lev Landau mellett dolgozott, mielőtt 1941-ben az Egyesült
+                                    Államokba emigrált, ahol a Massachusetts Institute of Technology professzoraként ment nyugdíjba.
+                                </p>
+                                <p>
+                                    Gombás Pál (1909‒1971) atomfizikus a fémek statisztikus elméletével foglalkozott. A Műegyetem professzoraként lett öngyilkos.
+                                </p>
+                                <p>
+                                    Jánossy Lajos (1912‒1978) sokoldalú fizikus és asztrofizikus volt, aki Bécsben és Berlinben tanult, és dublini professzorként a kozmikus sugárzást kutatta, amikor 1950-ben hazatért. Magas akadémiai
+                                    tisztségek és aktív politikai szerepvállalás jellemezte tevékenységét.
+                                </p>
+                                <p>
+                                    Laurie Brown (1923‒) részecskefizikus, majd tudománytörténész magyar bevándorló szülők gyermekeként született New Yorkban, és Richard Feynman volt a doktoránsvezetője a Cornell Egyetemen. A
+                                    Northwestern Egyetem professor emeritusa.
+                                </p>
+                                <p>
+                                    Krausz Ferenc (1962‒) az ELTE-n elméleti fizikát, a Műegyetemen villamosmérnökséget tanult. Közel két évtizedig kutatott és volt professzor a Bécsi Egyetemen, mielőtt Münchenben Max Planck intézeti
+                                    igazgató és a Ludwig Maximilian Egyetem kísérleti fizika professzora lett. Lézertechnológiában tett felfedezéseket, és elsőként valósított meg attoszekundumos (10‒18 s) pulzusokat kutatásaiban. A
+                                    molekulán belüli elektronviselkedést befolyásoló módszert dolgozott ki.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="quiz__item">
+                        <header class="quiz__header">
+                            <i class="ri-add-line quiz__icon"></i>
+                            <h3 class="quiz__item-title" title="Kattintson">
+                                IV. Különleges teljesítmények
+                            </h3>
+                        </header>
+                        <div class="quiz__content">
+                            <div class="quiz__description">
+                                <p>
+                                    A magyar–amerikai Kepes György (1906‒2001) 1937-től élt Amerikában, a Massachusetts Institute of Technology dizájn professzoraként új irányokat hozott létre a tervezésben és
+                                    fotográfiában.
+                                </p>
+                                <p>
+                                    Andy Grove (Gróf András, 1936‒2016) Budapesten kezdte tanulmányait az Eötvös Loránd Tudományegyetem Természettudományi Kara vegyész szakán, és az 1956-os forradalmat követően emigrált
+                                    Amerikába.
+                                    Tanulmányait a City College-ban folytatta New Yorkban, majd doktorátust szerzett Berkeley-ben. Komputertechnológiában elért eredményei a legismertebbek, az Intel egyik alapítója.
+                                </p>
+                                <p>
+                                    Marx György (1925‒2002) fizikus és asztrofizikus, tudománytörténész, az Eötvös Loránd Tudományegyetem professzora visszahozta a magyar köztudatba az elszármazott, elüldözött nagy
+                                    magyar fizikusokat.
+                                </p>
+                                <p>
+                                    Barabási Albert-László (1967‒) magyar–amerikai fizikus hálózatkutatásai nemzetközileg ismertek. Romániában született, Bukarestben, majd Budapesten, végül Bostonban tanult, és az
+                                    Egyesült Államokban
+                                    él, a Northeastern University professzora.
+                                </p>
+                                <p>
+                                    Polányi Mihály (Michael Polanyi, 1891‒1976) magyar–brit tudósé; orvosból lett fizikai kémikus, majd filozófus. Előremutató felfedezéseket tett az adszorbció kutatásában, úttörően
+                                    fejlesztette tovább
+                                    a röntgenkrisztallográfiát és legismertebb kémiai felfedezései a reakciók mechanizmusának kutatásában születtek.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="quiz__item">
+                        <header class="quiz__header">
+                            <i class="ri-add-line quiz__icon"></i>
+                            <h3 class="quiz__item-title" title="Kattintson">
+                                V. Szellemi tudományok (irodalom, történelem)
+                            </h3>
+                        </header>
+                        <div class="quiz__content">
+                            <div class="quiz__description">
+                                <p>
+                                    A zenetudományban, művészettörténetben, filmtudományban, hebraisztikában, filozófiában, közgazdaságtanban, szociológiában, episztemológiában és számos más területen is vannak
+                                    világnagyságaink.
+                                </p>
+                                <p>
+                                    Bartók Béla nemcsak zeneszerzésben, hanem zenetudósként is világhíres. Emlékművei állnak Londonban, Brüsszelben, New Yorkban és másutt.
+                                </p>
+                                <p>
+                                    Zenetudósok Kodály Zoltán, Bartha Dénes, Lendvai Ernő, Szabolcsi Bence.
+                                </p>
+                                <p>
+                                    Művészettörténetet Hauser Arnold
+                                </p>
+                                <p>
+                                    Filmesztétikát Balázs Béla
+                                </p>
+                                <p>
+                                    Hebraisztikát Komoróczy Géza
+                                </p>
+                                <p>
+                                    Filozófus Lukács György
+                                </p>
+                                <p>
+                                    Közgazdaságban nagy nevek Kornai János, Polányi Károly
+                                </p>
+                                <p>
+                                    Szociológiában Mannheim Károly, Szalai Sándor
+                                </p>
+                                <p>
+                                    Ismeretelméletben Polányi Mihály, Lakatos Imre.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="quiz__group">
+                    <div class="quiz__item">
+                        <header class="quiz__header">
+                            <i class="ri-add-line quiz__icon"></i>
+                            <h3 class="quiz__item-title" title="Kattintson">
+                                VI. A "marslakók"
+                            </h3>
+                        </header>
+                        <div class="quiz__content">
+                            <div class="quiz__description">
+                                <p>
+                                    A „marslakók” azok a kiemelkedő tudósok voltak, akik tudományos pályájukat is alárendelték a szabad világ és benne új hazájuk, az Egyesült Államok védelmének előbb a német nemzetiszocializmussal –
+                                    nácizmussal –, majd a szovjet kommunizmussal szemben. A „marslakók” elnevezés onnan ered, hogy a Manhattan-tervben feltűnt, hogy sok a magyar résztvevő, és amikor Enrico Fermi ezt megjegyezte, Szilárd
+                                    Leó azt válaszolta, hogy azok nem is magyarok, hanem a Marsról származnak, és csak álcázásul beszélnek magyarul.
+                                </p>
+                                <p>
+                                    Teller Ede egyértelműen felsorolta az öt „marslakót”, és ez megfelel a fenti meghatározásnak: Kármán Tódor, Szilárd Leó, Wigner Jenő, Neumann János és Teller Ede.
+                                </p>
+                                <p>
+                                    Kármán Tódor teremtette meg az amerikai légierő tudományos alapjait, de polgári gyakorlati kérdéseket is megoldott, mint amikor felderítette egy híd összeomlásának okait, vagy kidolgozta a
+                                    leggazdaságosabb erdősávtelepítés módjait.
+                                </p>
+                                <p>
+                                    Szilárd Leo jutott el először a maghasadásos jelenségen alapuló atomrobbantás gondolatáig, de újszerű hűtőgépre is volt (Albert Einsteinnel közös) szabadalma, sok minden egyéb mellett.
+                                </p>
+                                <p>
+                                    A vegyészmérnök végzettségű Wigner Jenő volt a világ első nukleáris mérnöke, és a nukleáris fegyverek kifejlesztése során neki is sok szabadalma született. Wigner az akkori Clinton Laboratóriumok
+                                    igazgatójaként (ma Oak Ridge Nemzeti Laboratórium) elsőként adott át radioaktív izotópokat kórházak számára orvosi felhasználásra.
+                                </p>
+                                <p>
+                                    Neumann János, akinek szintén volt vegyészmérnöki diplomája, úttörő szerepet játszott a tárolható programokkal működő számítógép kifejlesztésében, és maga is részt vett számítógép-építésben. Részese
+                                    volt az atombomba és a hidrogénbomba kifejlesztésének. Megfigyelőként jelen volt az első atomrobbantáskor, és a robbantás után azonnal a helyszínre sietett (valószínűleg túl korán, ami egészségét
+                                    károsan befolyásolhatta).
+                                </p>
+                                <p>
+                                    Teller Ede meghatározó munkát végzett a reaktorbiztonság megteremtésében, és egyik legfontosabb tudományos eredménye, a széles körben alkalmazott BET-egyenlet szintén gyakorlati célokat szolgál.
+                                </p>
+                                <p>
+                                    Teller Edét méltán tekinthetjük világhíres tudósnak, legfontosabb tudományos felfedezései az atomfizikában születtek, de fizikai kémiában tett felfedezései több idézetet hoztak számára, mint az
+                                    atomfizikaiak. Teller maga is úgy nyilatkozott, hogy ha valamiért Nobel-díjat kellett volna kapnia, az a BET-egyenlet volt. Ezt az egyenletet alkotóiról, Brunauer Istvánról (Stephen Brunauer,
+                                    1903‒1986), Paul Emmetről (1900‒1985) és Tellerről nevezték el. Gázok felületen történő adszorpcióját adja meg, és például felületek meghatározására kiterjedten alkalmazzák. Egy marék talaj teljes
+                                    felülete akkora, mint egy focipálya. És hogy mennyire fontos a felület nagyságának ismerete? A szénben nagy mennyiségű metángáz van, ami a szén kibányászása során azzal párhuzamosan, ahogy megnő a
+                                    szénfelület, szabadul ki. Ezért fontos a felület nagyságának meghatározása, mert a kiszabaduló nagy mennyiségű metán robbanáshoz vezethet, és a múltban sok bányásztragédiát okozott.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="quiz__item">
+                        <header class="quiz__header">
+                            <i class="ri-add-line quiz__icon"></i>
+                            <h3 class="quiz__item-title" title="Kattintson">
+                                VII. Orvosbiológusok
+                            </h3>
+                        </header>
+                        <div class="quiz__content">
+                            <div class="quiz__description">
+                                <p>
+                                    Szent-Györgyi Albert leghíresebb felfedezése a C-vitamin azonosítása volt az aszkorbinsavval, és ebben meghatározó szerepet játszott egy hungarikum, a szegedi paprika.
+                                </p>
+                                <p>
+                                    Huzella Tivadar (1886‒1950) rendezett 1932-ben Budapesten a sejt felfedezésének centenáriumára emlékezve. Huzella a szövettan professzora volt, és nemzetközi tekintélyű tudós, aki úttörő szerepet
+                                    játszott a sejtközötti állomány kutatásában.
+                                </p>
+                                <p>
+                                    Balázs Endre (1920‒2015), aki idővel a hialuronsav fizikai-kémiai módszerekkel történő tisztításával tette elérhetővé ezt a poliszacharidot többféle orvosi és kozmetikai alkalmazásokra. Az
+                                    alkalmazás egyik első példája volt, amikor egy lesérült milliódolláros versenyló nem sokkal egy nagy verseny előtt nem tudott lábra állni. A tulajdonos és a zsoké több hónapos várakozásra és lassú
+                                    gyógyulásra számíthatott. Egyetlen hialuronsav injekció azonban „csodát művelt”. A ló két napon belül lábra állt, és hamarosan folytathatta az edzéseket is, hogy még idejében felkészüljön a versenyre.
+                                    Ma milliók ízületeit kezelik hialuronsavas készítményekkel, elsősorban térdfájdalmakon segítve, de további ízületek kezelését is fokozatosan engedélyezik.
+                                </p>
+                                <p>
+                                    Bitó László az ugyancsak világsikert hozó Xalatan cseppeket a glaukóma kezelésére.
+                                </p>
+                                <p>
+                                    Kaposi Mór nevéhez a Kaposi-szarkóma
+                                </p>
+                                <p>
+                                    Selye János nevéhez a stressz felismerése.
+                                </p>
+                                <p>
+                                    Klein György (1925‒2016) korának egyik legelismertebb rákkutatója és immunológusa volt.
+                                </p>
+                                <p>
+                                    Pető András (1893‒1967) nemzetközi hírű és nemzetközileg elterjedt módszere reményt ad a mozgásszervi problémáktól szenvedő gyerekeknek és szüleiknek. Tanításait az egész világon követik.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="quiz__item">
+                        <header class="quiz__header">
+                            <i class="ri-add-line quiz__icon"></i>
+                            <h3 class="quiz__item-title" title="Kattintson">
+                                VIII. Kémikusok
+                            </h3>
+                        </header>
+                        <div class="quiz__content">
+                            <div class="quiz__description">
+                                <p>
+                                    Oláh György kémiai Nobel-díjast híresnek. Oláh a karbónium-kémia terén elért eredményeiért kapta a Nobel-díjat 1994-ben.
+                                </p>
+                                <p>
+                                    Zechmeister László (1889‒1972) Győrött járt iskolába, egyetemi tnulmányokat a zürichi ETH-n végzett. Nemzetközi hírneve elsősorban a kromatográfiás módszerek fejlesztéséből származik. Sokáig a Pécsi
+                                    Egyetem szerves kémia professzora volt, de 1940-ben az USA-ba távozott, és a California Institute of Technology szerves kémia professzoraként dolgozott nyugdíjazásáig.
+                                </p>
+                                <p>
+                                    Somorjai Gábor (1935‒) a felületi kémia úttörő kutatója, akinek mind az elméleti felfedezéseit, mind az alkalmazásokat fontos díjakkal jutalmazták. Amikor 2007-ben Gerhard Ertl kémiai Nobel-díjat
+                                    kapott a szilárd felületen lejátszódó kémiai folyamatok tanulmányozásáért, a szakmai közösség rosszul fogadta, hogy Somorjai kimaradt az elismerésből.
+                                </p>
+                                <p>
+                                    Szejtli József (1933‒2004) vegyészmérnök a ciklodextrin nemzetközileg elismert vezető kutatója alapította meg a ma is virágzó Cyclolab kutatási-fejlesztési laboratóriumot.
+                                </p>
+                                <p>
+                                    Furka Árpád (1931‒) szerves kémikus ugyancsak híres tudós, ráadásul tudományos kérdésekben az egyik legeredetibb gondolkodó Az 1980-as években feltalálta a kombinatorikus kémia módszerét, amely
+                                    szinte korlátlan számú peptid vagy fehérje egyidejű előállítását teszi lehetővé. A hazai támogatás hiánya is hozzájárult ahhoz, hogy érdemeit csak lassan és nehezen ismerték el. Prioritását
+                                    egyértelműen biztosította, de eredményének lassú nemzetközi publikálása idején mások szabadalmaztatták az általa leírt módszert. Amikor sikeres „külföldre szakadt” tudósainktól megkérdezik, hogyan
+                                    alakulhatott volna pályájuk itthon, Furka Árpádét lehetne kontrollkísérletnek tekinteni. Legnagyobb akadálya szakmabeli kollégáinak jobb esetben értetlensége, rosszabb esetben féltékenysége volt.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="quiz__item">
+                        <header class="quiz__header">
+                            <i class="ri-add-line quiz__icon"></i>
+                            <h3 class="quiz__item-title" title="Kattintson">
+                                IX. Matematikusok
+                            </h3>
+                        </header>
+                        <div class="quiz__content">
+                            <div class="quiz__description">
+                                <p>
+                                    A matematikában nincs Nobel-díj, de vannak más magas rangú kitüntetések. Talán a norvég kormány által a Norvég Tudományos Akadémia döntése alapján adományozott Abel-díj van a Nobel-díjhoz legközelebb.
+                                    Az első Abel-díjat 2003-ban adták ki, és azóta két esetben is magyar matematikus nyerte el.
+                                </p>
+                                <p>
+                                    Lax Péter 2005-ben és Szemerédi Endre 2012-ben. Matematikai Wolf-díjat kapott Erdős Pál (1983), Lax Péter (1984), Lovász László (1999) és 2000-ben a budapesti születésű, részben magyar származású
+                                    amerikai matematikus, Raoul Bott (1923‒2005). (Fizikai Wolf-díjat kapott Telegdi Bálint 1991-ben és kémiait Somorjai Gábor 1998-ban.)
+                                </p>
+                                <p>
+                                    Sok más magyar matematikus is híres elsősorban matematikus körökben; íme néhány további név: Fejér Lipót, Fejes Tóth László, Fuchs László, Haar Alfréd, Kőnig Gyula, Lánczos Kornél, Rényi Alfréd, Riesz
+                                    Frigyes, Szegő Gábor, Turán Pál, T. Sós Vera. Pólya György és Péter Rózsa hírnevét sikeres könyveik valószínűleg hosszabb távon biztosítják, mint a matematikát kutatók tudományos felfedezései.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="quiz__item">
+                        <header class="quiz__header">
+                            <i class="ri-add-line quiz__icon"></i>
+                            <h3 class="quiz__item-title" title="Kattintson">
+                                X. Nők
+                            </h3>
+                        </header>
+                        <div class="quiz__content">
+                            <div class="quiz__description">
+                                <p>
+                                    Legalább szimbolikus elismerésként megemlítek négy kiemelkedő női tudóst, már csak azért is, mert a Magyar Tudományos Akadémia rosszul áll a nők tudományos teljesítményének elismerésében.
+                                </p>
+                                <p>
+                                    A magyar–amerikai Telkes Mária (1900‒1995), fizikus, fizikai kémikus, a napelemek és alkalmazásuk kutatásában tűnt ki.
+                                </p>
+                                <p>
+                                    Banga Ilona (1906‒1998), biokémikus, az izomfehérjéket kutatta, és tett felfedezéseket.
+                                </p>
+                                <p>
+                                    Heller Ágnes (1929‒), filozófus, az etika, esztétika és filozófiatörténet kutatója.
+                                </p>
+                                <p>
+                                    T. Sós Vera (1930‒), matematikus, számelméleti és kombinatorikai kutatásai világszerte elismertek.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <h2 class="section__title-center">
+                Quiz
+                <a href="quiz.html" class="button--link button--flex">
+                    Kitöltése<i class="ri-search-2-line button__icon"></i>
+                </a>
+            </h2>
+        </section>
+        <section class="slider section">
+            <div class="slider__container container grid">
+                <div class="slider__modal">
+                    <div class="slider__modal-content">
+                        <i class="bx bx-x slider__modal-close"></i>
+                        <h3 class="slider__modal-title cim"></h3>
+                        <h3 class="slider__modal-subtitle alcim"></h3>
+                        <div class="slider__content">
+                            <div class="slider__data-container">
+                                <div class="slider__image-holder kep"></div>
+                            </div>
+                            <div class="slider__box">
+                                <p class="slider__modal-description leiras"></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer section">
+        <div class="shape__small"></div>
+        <div class="shape__big"></div>
+        <div class="footer__container container grid">
+            <div>
+                <a href="#" class="footer__logo">
+                    <img src="Images/logo.png" alt="Logo képe">
+                    Magyar Tudósok
+                </a>
+                <p class="footer__description">Magyar tudósok, feltalálók<br>életútjainak bemutatása.</p>
+            </div>
+            <div class="footer__content">
+                <div>
+                    <h3 class="footer__title">Készítők</h3>
+                    <ul class="footer__links">
+                        <li class="footer__item">
+                            Ónadi Péter
+                        </li>
+                        <li class="footer__item">
+                            Ilyés Bence
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="footer__title">Közösségi média</h3>
+                    <ul class="footer__socials">
+                        <a href="https://kolcseygimnazium.hu/" class="footer__social-link">
+                            <i class="ri-building-2-fill"></i>
+                        </a>
+                        <a href="https://www.facebook.com/VilledeCarcassonne/" target="_blank" class="footer__social-link">
+                            <i class="ri-facebook-circle-fill"></i>
+                        </a>
+                        <a href="https://www.instagram.com/explore/locations/80175317/carcassonne/" target="_blank" class="footer__social-link">
+                            <i class="ri-instagram-fill"></i>
+                        </a>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <span class="footer__copy">&#169 Copyright OPIB. Minden jog fenntartva</span>
+    </footer>
+    <a href="#" class="scrollup" id="scroll-up"><i class="ri-arrow-up-fill scrollup__icon"></i></a>
+    <script src="JS/swiper-bundle.min.js"></script>
+    <script src="JS/slider_array.js"></script>
+    <script src="JS/slider_main.js"></script>
+    <script src="JS/main.js"></script>
+</body>
+</html>
